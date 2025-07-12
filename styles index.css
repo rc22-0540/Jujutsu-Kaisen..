@@ -1,0 +1,339 @@
+.index-text-purple {
+  color: #6a0dad !important;
+}
+
+.index-bg-purple {
+  background-color: #6a0dad !important;
+}
+
+.index-border-purple {
+  border-color: #6a0dad !important;
+}
+
+
+.index-bg-gradient {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d1b69 50%, #1a1a1a 100%);
+}
+
+.index-bg-gradient-dark {
+  background: linear-gradient(135deg, #0d1117 0%, #1a0033 50%, #0d1117 100%);
+}
+
+
+.index-hero-stats {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.index-hero-stats h3 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+
+.index-synopsis-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.index-synopsis-image-container img {
+  transition: transform 0.3s ease;
+}
+
+.index-synopsis-image-container:hover img {
+  transform: scale(1.05);
+}
+
+.index-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.index-synopsis-image-container:hover .index-image-overlay {
+  transform: translateY(0);
+}
+
+.index-synopsis-tags .badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.index-overlay-content h5 {
+  margin-bottom: 0.5rem;
+}
+
+.index-overlay-content p {
+  margin: 0;
+}
+
+
+.index-technique-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index-technique-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(220, 53, 69, 0.3);
+}
+
+.index-technique-card .card-header {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1rem;
+}
+
+
+.index-curse-category-card {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.index-curse-category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(220, 53, 69, 0.4);
+}
+
+.index-category-icon {
+  filter: drop-shadow(0 0 10px currentColor);
+}
+
+.index-threat-level .progress {
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.index-powerful-curse-card {
+  transition: transform 0.3s ease;
+}
+
+.index-powerful-curse-card:hover {
+  transform: scale(1.02);
+}
+
+.index-curse-stats {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+
+.index-character-spotlight {
+  transition: transform 0.3s ease;
+}
+
+.index-character-spotlight:hover {
+  transform: translateY(-10px);
+}
+
+.index-character-overlay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.index-character-rank {
+  background: rgba(220, 53, 69, 0.9);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.index-character-power {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.index-stat-card {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.index-stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.index-stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  animation: indexCountUp 0.8s ease-out;
+}
+
+.index-stat-label {
+  font-size: 1.1rem;
+  color: #adb5bd;
+  margin: 0;
+}
+
+.index-stat-icon {
+  filter: drop-shadow(0 0 10px currentColor);
+}
+
+
+@keyframes indexCountUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 767px) {
+  .index-hero-stats h3 {
+    font-size: 1.5rem;
+  }
+
+  .index-stat-number {
+    font-size: 2rem;
+  }
+
+  .index-curse-category-card,
+  .index-stat-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .index-hero-stats .col-4 {
+    margin-bottom: 1rem;
+  }
+
+  .index-technique-card .card-body {
+    padding: 1rem;
+  }
+
+  .index-powerful-curse-card .row {
+    flex-direction: column;
+  }
+
+  .index-powerful-curse-card .col-md-4 {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.light-theme .index-bg-gradient {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e3d5f7 50%, #f8f9fa 100%);
+}
+
+.light-theme .index-bg-gradient-dark {
+  background: linear-gradient(135deg, #ffffff 0%, #f0e6ff 50%, #ffffff 100%);
+}
+
+.light-theme .index-curse-category-card {
+  background: rgba(255, 255, 255, 0.8);
+  color: #212529;
+}
+
+.light-theme .index-stat-card {
+  background: rgba(255, 255, 255, 0.8);
+  color: #212529;
+}
+
+.light-theme .index-stat-label {
+  color: #6c757d;
+}
+
+.light-theme .index-curse-stats {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.light-theme .index-character-power {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.light-theme .index-hero-stats {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.light-theme .index-synopsis-tags .badge {
+  color: #fff;
+}
+
+
+.index-technique-card:hover,
+.index-curse-category-card:hover,
+.index-powerful-curse-card:hover,
+.index-character-spotlight:hover,
+.index-stat-card:hover {
+  box-shadow: 0 8px 25px rgba(220, 53, 69, 0.2);
+}
+
+
+.index-synopsis-image-container,
+.index-technique-card,
+.index-curse-category-card,
+.index-powerful-curse-card,
+.index-character-spotlight,
+.index-stat-card {
+  transition: all 0.3s ease;
+}
+
+
+.index-category-icon:hover,
+.index-stat-icon:hover {
+  filter: drop-shadow(0 0 15px currentColor);
+}
+
+
+.index-threat-level .progress-bar {
+  transition: width 0.8s ease-in-out;
+}
+
+
+.index-technique-card .card,
+.index-powerful-curse-card .card {
+  transition: border-color 0.3s ease;
+}
+
+.index-technique-card:hover .card {
+  border-color: rgba(220, 53, 69, 0.8) !important;
+}
+
+
+.index-text-purple {
+  text-shadow: 0 0 5px rgba(106, 13, 173, 0.5);
+}
+
+
+.index-character-spotlight .btn,
+.index-stat-card .btn {
+  transition: all 0.3s ease;
+}
+
+.index-character-spotlight .btn:hover,
+.index-stat-card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-backdrop.show {
+  z-index: 2000 !important;
+}
+.modal.show {
+  z-index: 2001 !important;
+}

@@ -1,0 +1,341 @@
+:root {
+  --primary-color: #dc2626;
+  --secondary-color: #b91c1c;
+  --accent-color: #ef4444;
+  --dark-bg: #1a0a0a;
+  --card-bg: rgba(26, 10, 10, 0.8);
+  --text-light: #f8fafc;
+  --text-muted: #d1d5db;
+  --border-color: rgba(220, 38, 38, 0.3);
+  --hover-color: rgba(220, 38, 38, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1a0a0a 0%, #450a0a 50%, #1a0a0a 100%);
+  color: var(--text-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  color: #dc3545 !important;
+}
+
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #adb5bd !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #dc3545 !important;
+}
+
+
+#theme-toggle {
+  border-color: #dc3545;
+  color: #dc3545;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#theme-toggle:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+
+.hero-section {
+  position: relative;
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(185, 28, 28, 0.1) 100%);
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(220,38,38,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(26, 10, 10, 0.3) 100%);
+}
+
+.hero-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 30px rgba(220, 38, 38, 0.5);
+  position: relative;
+  z-index: 2;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+
+.techniques-section {
+  padding: 80px 0;
+}
+
+.technique-item {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+  display: block;
+}
+
+.technique-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.technique-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: all 0.4s ease;
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.technique-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(220, 38, 38, 0.2);
+  border-color: var(--primary-color);
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.technique-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+}
+
+.technique-type {
+  background: rgba(220, 38, 38, 0.9);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.technique-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.character-name {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.technique-description {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+
+.footer {
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid var(--border-color);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.modal-content {
+  background: var(--dark-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-light);
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border-color);
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .filter-buttons {
+    padding: 0 1rem;
+  }
+
+  .filter-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .card-content {
+    padding: 1.5rem;
+  }
+
+  .technique-name {
+    font-size: 1.5rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .social-link {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 80px 0 60px;
+  }
+
+  .techniques-section {
+    padding: 60px 0;
+  }
+
+  .filter-section {
+    padding: 40px 0;
+  }
+
+  .card-image {
+    height: 200px;
+  }
+}
+
+
+.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
