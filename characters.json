@@ -1,0 +1,148 @@
+[
+  {
+    "name": "Yuji Itadori",
+    "role": "principal",
+    "image": "img/characters/yuji.jpg",
+    "technique": "Black Flash",
+    "age": 16,
+    "position": "Estudiante",
+    "stats": {
+      "strength": 85,
+      "speed": 90,
+      "intelligence": 70
+    },
+    "video": "video/yuji.mp4",
+    "description": "Yuji posee una fuerza sobrehumana y una voluntad inquebrantable...",
+    "connections": ["Satoru Gojo", "Megumi Fushiguro"]
+  },
+  {
+    "name": "Satoru Gojo",
+    "role": "principal",
+    "image": "img/characters/gojo.jpg",
+    "technique": "Infinite Void",
+    "age": 28,
+    "position": "Profesor",
+    "stats": {
+      "strength": 95,
+      "speed": 95,
+      "intelligence": 90
+    },
+    "video": "video/gojo.mp4",
+    "description": "El hechicero más poderoso, con acceso a la Técnica Ilimitada...",
+    "connections": ["Yuji Itadori", "Megumi Fushiguro", "Ryomen Sukuna"]
+  },
+  {
+    "name": "Megumi Fushiguro",
+    "role": "principal",
+    "image": "img/characters/megumi.jpg",
+    "technique": "Chimera Shadow Garden",
+    "age": 16,
+    "position": "Estudiante",
+    "stats": {
+      "strength": 75,
+      "speed": 85,
+      "intelligence": 85
+    },
+    "video": "video/megumi.mp4",
+    "description": "Un hechicero inteligente y reservado que canaliza sombras para convocar a sus Shikigamis.",
+    "connections": ["Yuji Itadori", "Satoru Gojo"]
+  },
+
+  {
+    "name": "Maki Zenin",
+    "role": "secundario",
+    "image": "img/characters/maki.jpg",
+    "technique": "Divergent Fist",
+    "age": 17,
+    "position": "Estudiante",
+    "stats": {
+      "strength": 88,
+      "speed": 83,
+      "intelligence": 80
+    },
+    "video": "video/maki.mp4",
+    "description": "Una guerrera experta en armas malditas, sin hábito de usar energía maldita.",
+    "connections": ["Panda", "Megumi Fushiguro"]
+  },
+  {
+    "name": "Kento Nanami",
+    "role": "secundario",
+    "image": "img/characters/nanami.jpg",
+    "technique": "Proporción 7:3",
+    "age": 26,
+    "position": "Hechicero Profesional",
+    "stats": {
+      "strength": 80,
+      "speed": 65,
+      "intelligence": 90
+    },
+    "video": "video/nanami.mp4",
+    "description": "Detecta puntos débiles en proporción 7:3 y canaliza su energía maldita en su espada.",
+    "connections": ["Yuji Itadori", "Megumi Fushiguro"]
+  },
+  {
+    "name": "Aoi Todo",
+    "role": "secundario",
+    "image": "img/characters/todo.jpg",
+    "technique": "Boogie Woogie",
+    "age": 18,
+    "position": "Estudiante",
+    "stats": {
+      "strength": 95,
+      "speed": 85,
+      "intelligence": 60
+    },
+    "video": "video/todo.mp4",
+    "description": "Al chasquear los dedos intercambia posiciones con cualquier persona u objeto.",
+    "connections": ["Yuji Itadori", "Megumi Fushiguro"]
+  },
+
+  {
+    "name": "Ryomen Sukuna",
+    "role": "antagonista",
+    "image": "img/characters/sukuna.jpg",
+    "technique": "Malevolent Shrine",
+    "age": 1000,
+    "position": "Rey Maldito",
+    "stats": {
+      "strength": 99,
+      "speed": 98,
+      "intelligence": 95
+    },
+    "video": "video/sukuna.mp4",
+    "description": "El legendario Rey de las Maldiciones, con un poder temido por todos.",
+    "connections": ["Yuji Itadori"]
+  },
+  {
+    "name": "Mahito",
+    "role": "antagonista",
+    "image": "img/characters/mahito.jpg",
+    "technique": "Idle Transfiguration",
+    "age": 23,
+    "position": "Maldición",
+    "stats": {
+      "strength": 85,
+      "speed": 88,
+      "intelligence": 90
+    },
+    "video": "video/mahito.mp4",
+    "description": "Manipula las almas de sus víctimas para deformar sus cuerpos a voluntad.",
+    "connections": ["Ryomen Sukuna", "Yuji Itadori"]
+  },
+  {
+    "name": "Toji Fushiguro",
+    "role": "antagonista",
+    "image": "img/characters/toji.jpg",
+    "technique": "Cazador sin Energía",
+    "age": 32,
+    "position": "Asesino de Hechiceros",
+    "stats": {
+      "strength": 100,
+      "speed": 100,
+      "intelligence": 70
+    },
+    "video": "video/toji.mp4",
+    "description": "Sin energía maldita propia, usa armas malditas con sobrehumana agilidad y fuerza.",
+    "connections": ["Megumi Fushiguro"]
+  }
+]
